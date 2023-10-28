@@ -32,21 +32,21 @@ void print(struct human *h) {
     printf("%i\n", h->age);
 }
 
-int main() {
+/*int main() {
     
-    struct human pupils[3];
+    struct human *pupils[3];
 
     struct human *human1 = createHuman1("Walter", "Wuff", 13);
     struct human *human2 = createHuman1("Franz", "Meier", 16);
     struct human *human3 = createHuman1("Katz", "Brumm", 130);
 
-    pupils[0] = *human1;
-    pupils[1] = *human2;
-    pupils[2] = *human3;
+    pupils[0] = human1;
+    pupils[1] = human2;
+    pupils[2] = human3;
 
     for (int i = 0; i < 3; i++) {
         printf("----------------\n");
-        print(&pupils[i]);
+        print(pupils[i]);
     }
 
     free(human1);
@@ -54,6 +54,6 @@ int main() {
     free(human3);
 
     return 0;
-}
+}*/
 
 

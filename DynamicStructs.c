@@ -20,6 +20,7 @@ struct human *createHuman(char name[], char hairColor[], int geburtsjahr) {
     strcpy(willi->name, name);
     strcpy((*willi).hairColor, hairColor);
 
+
     return willi;
 }
 
@@ -30,9 +31,10 @@ void printHuman(struct human *h) {
 }
 
 
+/*
 int main() {
     struct human *willi = createHuman("Werner", "Red", 1886);
     printHuman(willi);
-
+    free(willi);
     return 0;
-}
+}*/

@@ -34,7 +34,7 @@ void changePlz(struct customer *custom, long  newPlz) {
 }
 
 
-int main(void) {
+/*int main(void) {
     struct customer willi = {
             "Werner", "Walter", 80937, "Frankreich", 10101996
     };
@@ -54,7 +54,7 @@ int main(void) {
 
 
     return 0;
-}
+}*/
 
 
 
