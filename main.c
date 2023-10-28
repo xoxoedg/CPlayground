@@ -60,6 +60,7 @@ int main() {
         printf("%d\n", *(inArray + j));
     }
 
+    free(inArray);
 
     return 0;
 }
