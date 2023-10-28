@@ -29,6 +29,8 @@ void printCust(struct customer custom) {
 
 void changePlz(struct customer *custom, long  newPlz) {
     (*custom).PLZ = newPlz;
+    //Todo Elementkennzeichnungsoperator
+    //custom->PLZ = newPlz;
 }
 
 
