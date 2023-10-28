@@ -25,6 +25,12 @@ void printCust(struct customer custom) {
     printf("%s\n", custom.ort);
 }
 
+// Paramter pointer to struct
+
+void changePlz(struct customer *custom, long  newPlz) {
+    (*custom).PLZ = newPlz;
+}
+
 
 int main(void) {
     struct customer willi = {
@@ -36,6 +42,12 @@ int main(void) {
     printf("-----------------------\n");
 
     struct customer walter = changeName(willi, "Brumm");
+    printCust(walter);
+
+    changePlz(&walter, 1111);
+
+    printf("-----------------------\n");
+
     printCust(walter);
 
 
